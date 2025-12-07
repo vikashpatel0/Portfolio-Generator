@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Portfolio Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Portfolio Generator</h1>
+        <p>Create your portfolio website essay way!</p>
+    </header>
+
+    <main>
+        <form id="portfolioForm">
+            <!-- Personal Details Section -->
+            <section id="personalDetails">
+                <h2>Personal Details</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+
+                <label for="bio">Bio:</label>
+                <textarea id="bio" name="bio" rows="3" placeholder="A short bio about yourself" required></textarea>
+            </section>
+
+            <!-- Academic Details Section -->
+            <section id="academicDetails">
+                <h2>Academic Details</h2>
+                <label for="major">Major or resent:</label>
+                <input type="text" id="major" name="major" placeholder="Your Major" required>
+
+                <label for="gpa">CGPA:</label>
+                <input type="text" id="gpa" name="gpa" placeholder="Your GPA">
+
+                <label for="courses">Relevant Courses:</label>
+                <textarea id="courses" name="courses" rows="3" placeholder="List relevant courses"></textarea>
+            </section>
+
+            <!-- Project Details Section -->
+            <section id="projectDetails">
+                <h2>Project Details</h2>
+                <label for="projectTitle">Project Title:</label>
+                <input type="text" id="projectTitle" name="projectTitle" placeholder="Title of the project" required>
+
+                <label for="projectDescription">Description:</label>
+                <textarea id="projectDescription" name="projectDescription" rows="3" placeholder="Brief description of the project" required></textarea>
+
+                <label for="projectImage">Upload Image:</label>
+                <input type="file" id="projectImage" name="projectImage">
+            </section>
+
+            <!-- Skills and Experience Section -->
+            <section id="skillsExperience">
+                <h2>Skills and Experience</h2>
+                <label for="skills">Skills:</label>
+                <textarea id="skills" name="skills" rows="3" placeholder="List your skills" required></textarea>
+
+                <label for="experience">Experience:</label>
+                <textarea id="experience" name="experience" rows="3" placeholder="Describe your work experience"></textarea>
+            </section>
+
+            <!-- Visual Identity Section -->
+            <section id="visualIdentity">
+                <h2>Visual Identity</h2>
+                <label for="logo">Upload Logo:</label>
+                <input type="file" id="logo" name="logo">
+
+                <label for="colorScheme">Color Scheme:</label>
+                <input type="color" id="colorScheme" name="colorScheme" value="#6200ea">
+
+                <label for="font">Font:</label>
+                <select id="font" name="font">
+                    <option value="Poppins">Poppins</option>
+                    <option value="Roboto">Roboto</option>
+                    <option value="Arial">Arial</option>
+                    <option value="Verdana">Verdana</option>
+                </select>
+            </section>
+
+            <!-- Social Media Links Section -->
+            <section id="socialMediaLinks">
+                <h2>Social Media Links</h2>
+                <label for="linkedin">LinkedIn:</label>
+                <input type="url" id="linkedin" name="linkedin" placeholder="Your LinkedIn Profile URL">
+
+                <label for="github">GitHub:</label>
+                <input type="url" id="github" name="github" placeholder="Your GitHub Profile URL">
+
+                <label for="twitter">Twitter:</label>
+                <input type="url" id="twitter" name="twitter" placeholder="Your Twitter Profile URL">
+            </section>
+
+            <button type="submit">Generate Portfolio</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Portfolio Generator. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
